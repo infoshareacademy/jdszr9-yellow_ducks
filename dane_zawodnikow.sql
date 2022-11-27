@@ -11,10 +11,13 @@ left join "match" m
 on p.player_api_id  = nullif (m.home_player_1, '')::int
 left join team t 
 on m.home_team_id = t.id 
+WHERE m.home_player_1 IS NOT NULL
+order by p.id asc
 
-select p.id, p.player_api_id, p.player_name, m.home_team_id, t.team_long_name 
+select p.id, p.player_api_id, p.player_name, m.home_team_id
 from player p 
 left join "match" m 
 on p.player_api_id  = nullif (m.home_player_1, '')::int
 left join team t 
 on m.home_team_id = t.id 
+WHERE m.home_player_1 IS NOT NULL
