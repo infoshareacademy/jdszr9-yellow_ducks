@@ -1,0 +1,2 @@
+1) Czy istnieje zależność między ratingiem piłkarza a ilością zdobytych goli.
+2) Czy większa ilość przeinień (penalties) danego piłkarza wpływa na ilość zdobytych goli.
